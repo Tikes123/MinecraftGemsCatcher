@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Moul";
+    src: url("resources/fonts/Moul-Regular.ttf");
+    font-weight: 400;
+}
+canvas{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.modal{
+    display: block;
+  }
+
+  .modal_padding {
+    max-width: 320px !important;
+    max-height: 480px !important;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .rel{
+    position: absolute;
+  }
+
+  .abso{
+    position: relative;
+  }
+  
+  .modal_bg {
+    padding-bottom:40px;
+    height: 480px;
+    background-color: #79cbc5bf !important;
+    /* background-image: url(resources/modal_bg.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: myTok 0.3s linear 0.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes myTok {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .modal_tut{
+    padding-bottom:40px;
+    height: 480px;
+    /* background-color: #79cbc5bf !important; */
+    background-image: url("resources/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: myTut 0.2s linear 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes myTut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .modal_win{
+    padding-bottom:40px;
+    height: 480px;
+    /* background-color: #79cbc5bf !important; */
+    background-image: url("resources/winner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+  
+  .myPrice{
+    display: flex;
+    position: relative;
+    font-size: 38px;
+    color: green;
+    text-shadow: 2px 2px greenyellow;
+    font-family: fantasy;
+    margin-left: -80px;
+    margin-top: -33px;
+    margin-bottom: 36px;
+    z-index: 99;
+  }
+
+  .winn_box{
+    width: 320px;
+    height: 480px;
+  }
+
+  .winn_bg{
+    width: 320px;
+    height: 590px;
+    position: absolute;
+  }
+
+  .modal_img{
+    margin-top: -98px;
+  }
+
+  .modal_win1{
+    padding-bottom:40px;
+    height: 480px;
+    /* background-color: #79cbc5bf !important; */
+    background-image: url("resources/tuto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .modal_win2{
+    padding-bottom:40px;
+    height: 480px;
+    /* background-color: #79cbc5bf !important; */
+    background-image: url("resources/clmbox2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: myWon2 0.3s linear 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes myWon2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .mt_m{
+    margin-top: 108px;
+  }
+
+  .mt_tut{
+    margin-top: 25px;
+  }
+
+  .wow{
+    width: 250px;
+  }
+
+  .won{
+    width: 155px;
+  }
+
+  .time_img{
+    width: 39px;
+    height: auto;
+    position: absolute;
+    z-index: 9;
+    margin-top: -11px;
+    margin-left: -15px;
+  }
+
+  .bar {
+    border: 9px solid #c19525;
+    height: 34px;
+    width: 85%;
+    border-radius: 12%;
+    margin-top: -45px;
+    z-index: 1;
+    opacity: 99;
+    position: relative;
+  }
+  
+    .progress {
+      animation: fill 15s linear 1;
+      height: 100%;
+      background-color: #005ab4 !important;
+    }
+ 
+  @keyframes fill {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .dragging {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    animation: Won 3s linear 1s;
+  }
+  
+  @keyframes Won {
+    0%   {left: 0%;}
+    /* 10%  {left: 10%;}
+    20%  {left: 20%;}
+    30%  {left: 30%;}*/
+    40%  {margin-left: 75%;} 
+    50%  {margin-left: -18%;}
+    60%  {margin-left: -18%;}
+    /* 70%  {margin-left: -15%;}
+    80%  {margin-left: -10%;}
+    90%  {margin-left: 25%;} */
+    100% {margin-left: 33%;}
+  }
+
+  .tut_img {
+    width: 125px;
+    height: auto;
+    margin-left: 75px;
+  }
+  .hand_img {
+    width: 65px;
+    margin-top: -50px;
+    margin-left: 95px;
+  }
+
+  .time_img{
+    width: 39px;
+    height: auto;
+    position: absolute;
+    z-index: 9;
+    margin-top: -11px;
+    margin-left: -15px;
+  }
+
+  .bar {
+    border: 9px solid #c19525;
+    height: 34px;
+    width: 25%;
+    min-width: 275px;
+    border-radius: 12%;
+    margin-top: 435px;
+    margin-left: 25px;
+    z-index: 1;
+    opacity: 99;
+    position: absolute;
+  }
+  
+    .progress {
+      animation: fill 12s linear 1;
+      height: 100%;
+      background-color: #005ab4 !important;
+    }
+ 
+  @keyframes fill {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .arrow_img{
+    width: 60px;
+    margin-top: -45px !important;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .disable{
+    display: block;
+    pointer-events: none;
+  }
